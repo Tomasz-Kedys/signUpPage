@@ -24,17 +24,27 @@ body {
   background-position: center;
 }
 
-.signup-left,
+.signup-left{
+  flex: 1;
+  padding: 3rem;
+  padding-right: 0;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .signup-right {
   flex: 1;
   padding: 3rem;
+  padding-right: 5rem;
+  padding-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
   margin-bottom: 1rem;
@@ -42,6 +52,7 @@ body {
 
 .description {
   color: white;
+  font-size: 1.2rem;
   line-height: 1.6;
   max-width: 400px;
 }
@@ -50,7 +61,7 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .trial-button {
@@ -66,7 +77,7 @@ body {
 }
 
 .trial-button:hover{
-  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2.5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .trial-button .bold {
