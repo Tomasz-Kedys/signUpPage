@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
   color: var(--gray-900);
 }
@@ -55,14 +55,18 @@ body {
 
 .trial-button {
   width: 100%;
+  font-size: 1rem;
   background-color: var(--purple-700);
   color: white;
   padding: 1rem;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+
+.trial-button:hover{
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .trial-button .bold {
@@ -87,7 +91,7 @@ body {
 }
 
 .input-error {
-  border-color: var(--red-400);
+  border-color: var(--red-400) !important;
   background-image: url("images/icon-error.svg");
   background-repeat: no-repeat;
   background-position: right 1rem center;
@@ -127,6 +131,7 @@ body {
 
 .claim-button:hover {
   background-color: hsl(154, 59%, 61%);
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .terms {
