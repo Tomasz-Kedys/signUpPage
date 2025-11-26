@@ -1,0 +1,167 @@
+:root {
+  --red-400: hsl(0, 100%, 74%);
+  --green-400: hsl(154, 59%, 51%);
+  --purple-700: hsl(248, 32%, 49%);
+  --gray-900: hsl(249, 10%, 26%);
+  --purple-350: hsl(246, 25%, 77%);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: var(--gray-900);
+}
+
+.signup-page {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: var(--red-400);
+  background-image: url("images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-left,
+.signup-right {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: white;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.trial-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.trial-button {
+  width: 100%;
+  background-color: var(--purple-700);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.trial-button .bold {
+  font-weight: 700;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form input {
+  flex: 1;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--purple-350);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-error {
+  border-color: var(--red-400);
+  background-image: url("images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 20px;
+}
+
+.error-message {
+  font-size: 0.8rem;
+  color: var(--red-400);
+  font-style: italic;
+  text-align: right;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form input:focus {
+  border-color: var(--purple-700);
+  outline: none;
+}
+
+.input-success {
+  border-color: var(--green-400);
+}
+
+.claim-button {
+  width: 100%;
+  background-color: var(--green-400);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 0 hsl(154, 59%, 45%);
+  transition: background-color 0.2s ease;
+}
+
+.claim-button:hover {
+  background-color: hsl(154, 59%, 61%);
+}
+
+.terms {
+  font-size: 0.8rem;
+  color: var(--purple-350);
+  text-align: center;
+}
+
+.link {
+  color: var(--red-400);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .signup-page {
+    flex-direction: column;
+    background-image: url("images/bg-intro-mobile.png");
+  }
+
+  .signup-left,
+  .signup-right {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
