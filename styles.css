@@ -88,6 +88,14 @@ body {
   justify-content: center;
 }
 
+.input-error {
+  border-color: var(--red-400) !important;
+  background-image: url("images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 20px;
+}
+
 .signup-form input {
   flex: 1;
   padding: 1rem;
@@ -99,21 +107,13 @@ body {
   transition: border-color 0.2s ease;
 }
 
-.input-error {
-  border-color: var(--red-400) !important;
-  background-image: url("images/icon-error.svg");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 20px;
-}
-
 .error-message {
   font-size: 0.8rem;
   color: var(--red-400);
   font-style: italic;
   text-align: right;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 .signup-form input:focus {
@@ -149,10 +149,9 @@ body {
   text-align: center;
 }
 
-.link {
+.link a{
   color: var(--red-400);
   font-weight: bold;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
